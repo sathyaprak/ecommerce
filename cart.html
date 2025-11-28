@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimpleShop — Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SimpleShop</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html" class="active">Cart</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>Your Cart</h1>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Classic Tee</td>
+          <td>₹799</td>
+          <td>1</td>
+          <td>₹799</td>
+        </tr>
+        <tr>
+          <td>Backpack</td>
+          <td>₹1,299</td>
+          <td>1</td>
+          <td>₹1,299</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <p><strong>Total:</strong> ₹2,098</p>
+      <a class="btn" href="#checkout">Proceed to Checkout</a>
+    </div>
+
+    <section id="checkout" class="checkout">
+      <h2>Checkout</h2>
+      <form class="checkout-form">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <label for="address">Address</label>
+          <input id="address" type="text" placeholder="Street, City, State" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="+91 XXXXX XXXXX" required />
+        </div>
+        <div class="form-row">
+          <label for="payment">Payment method</label>
+          <select id="payment" required>
+            <option value="">Select</option>
+            <option>UPI</option>
+            <option>Card</option>
+            <option>Cash on Delivery</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 SimpleShop</p>
+  </footer>
+</body>
+</html>
